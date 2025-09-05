@@ -504,25 +504,6 @@ export default function AsciiConverter() {
             />
           )}
 
-          {/* Floating "Open in v0" button - positioned to not trigger scroll */}
-          <div className="fixed bottom-4 right-4 z-30 pointer-events-auto">
-            <a
-              href="https://v0.dev/community/ascii-art-request-0UE1nczWzbu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50 rounded block"
-            >
-              <img
-                src="https://v0.dev/chat-static/button.svg"
-                alt="Open in v0"
-                width="99"
-                height="32"
-                className="drop-shadow-md"
-              />
-            </a>
-          </div>
-        </div>
-
         {/* Resizable divider - Only visible on desktop after hydration */}
         {isHydrated && isDesktop && (
           <div
